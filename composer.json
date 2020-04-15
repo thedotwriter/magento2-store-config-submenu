@@ -1,5 +1,5 @@
 {
-    "name": "thedotwriter/storeconfigsubmenu",
+    "name": "thedotwriter/magento2-store-config-submenu",
     "description": "Makes the configuration submenu available inside a slide modal when cliking on the Stores > Settings > Configuration link. Makes us skip the need to load the default config form before the one we want.",
     "require": {
         "php": "^7.2",
