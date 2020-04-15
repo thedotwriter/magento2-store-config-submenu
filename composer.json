@@ -1,0 +1,33 @@
+{
+    "name": "thedotwriter/storeconfigsubmenu",
+    "description": "Makes the configuration submenu available inside a slide modal when cliking on the Stores > Settings > Configuration link. Makes us skip the need to load the default config form before the one we want.",
+    "require": {
+        "php": "^7.2",
+        
+        "magento/magento-composer-installer": "*"
+    },
+    "type": "magento2-module",
+    "authors": [{
+        "name": "Peeter RANNOU",
+        "homepage": "http://thedotwriter.com/",
+        "role": "Developer"
+    }],
+    "version": "0.1.0",
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Thedotwriter\\StoreConfigSubmenu\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Thedotwriter/StoreConfigSubmenu"
+            ]
+        ]
+    }
+}
