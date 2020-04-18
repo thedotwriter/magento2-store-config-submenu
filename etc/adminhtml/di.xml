@@ -1,16 +1,5 @@
 <?xml version="1.0"?>
-<!--
-/**
- * @author Amasty Team
- * @copyright Copyright (c) 2020 Amasty (https://www.amasty.com)
- * @package Amasty_Base
- */
--->
-
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Magento\Backend\Block\Menu">
-        <plugin name="Thedotwriter_StoreConfigSubmenu:menu" type="Thedotwriter\StoreConfigSubmenu\Plugin\Backend\Block\Menu"/>
-    </type>
     <type name="Magento\Config\Block\System\Config\Tabs">
         <plugin name="Thedotwriter_StoreConfigSubmenu:tabs" type="Thedotwriter\StoreConfigSubmenu\Plugin\Config\Block\System\Config\Tabs" />
     </type>

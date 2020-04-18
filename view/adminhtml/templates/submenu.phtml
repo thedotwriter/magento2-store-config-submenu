@@ -1,29 +1,12 @@
-<script>
-    require([
-        'jquery',
-        'Magento_Ui/js/modal/modal'
-    ], function ($, modal) {
-        $(function () {
-            // Prevent the click on the "Configuration" link to load the actual page.
-            $('[data-ui-id=menu-magento-config-system-config] > a').click(function (e) {
-                e.preventDefault();
-            });
-            
-            // Init the modal that will be opened when clicking on the "Configuration" link.
-            $('.config-submenu')
-                .modal({
-                    'type': 'slide',
-                    'title': 'Configuration',
-                    'trigger': '[data-ui-id=menu-magento-config-system-config] > a',
-                    'responsive': true,
-                    'buttons': []
-                });
-        });
-    });
-</script>
-<div class="config-submenu" style="display: none;">
-    <?php 
-    /** @var \Magento\Config\Block\System\Config\Tabs $submenu */
-    echo $submenu->toHtml(); 
-    ?>
+<?php
+/**
+ * Include the configuration submenu as a hidden block at the end of the page and init a modal to be opened when
+ * clicking on the "Configuration" link.
+ */
+
+/** @var \Magento\Config\Block\System\Config\Tabs $submenu */
+$submenu = $this->getChildHtml('config.submenu'); 
+?>
+<div class="config-submenu" style="display: none;" data-mage-init='{"storeConfigSubmenu":{}}'>
+    <?= $submenu; ?>
 </div>
