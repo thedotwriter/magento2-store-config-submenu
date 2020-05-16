@@ -20,13 +20,5 @@
         "psr-4": {
             "Thedotwriter\\StoreConfigSubmenu\\": ""
         }
-    },
-    "extra": {
-        "map": [
-            [
-                "*",
-                "Thedotwriter/StoreConfigSubmenu"
-            ]
-        ]
     }
 }
